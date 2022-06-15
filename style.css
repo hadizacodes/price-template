@@ -97,7 +97,7 @@ h4{
 
 /*----------for mobile*/
 
-@media only screen and (max-width:375px){ 
+@media only screen and (max-width:480px){ 
     .wrapper{font-size: 15px;}
     .grid-container{
         grid-template-columns: 1fr;
