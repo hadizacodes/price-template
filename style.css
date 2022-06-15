@@ -1,0 +1,121 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*----for desktop*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+
+#wrapper{
+    max-width: 100vh;
+    width: 100vw;
+    margin:  50px auto;
+    font-size: 16px;
+    font-family:   'Karla', sans-serif;
+    line-height: 1.5em;
+}
+body{
+    background-color: hsl(218, 22%, 67%);
+}
+.grid-container{
+    
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 200px 215px;
+    grid-template-areas: "item1 item1" "item2 item3";
+    
+
+    
+}
+.item1{
+    background-color:  hsl(204, 43%, 93%);
+    padding: 15px;
+    border-radius: 5px 5px 0 0;
+    grid-area: item1;
+    
+
+}
+.item2{
+background-color: hsl(179, 62%, 43%);
+color: white;
+padding: 15px;
+border-radius: 0px 0px 0px 5px;
+grid-area: item2;
+}
+.item3{
+
+    background-color: hsl(178, 32%, 54%);
+    color: whitesmoke;
+    padding: 15px;
+    border-radius:0 0 5px 0 ;
+    grid-area: item3;
+}
+.green{
+    color: hsl(71, 73%, 54%);
+}
+h1{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: hsl(179, 62%, 43%);
+    
+}
+h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    
+}
+.btn{
+
+    margin-top: 25px;
+    color: white;
+    border: 10px solid hsl(71, 73%, 54%);
+    background-color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    border-width: 15px 100px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.per{
+    margin-left: 5px;
+    margin-bottom: 35px;
+    color: rgb(221, 218, 218);
+    
+    
+}
+.dolz{
+    font-size: 30px;
+}
+.attribution{
+    text-align: center;
+    color: white;
+}
+
+/*----------for mobile*/
+
+@media only screen and (max-width:375px){ 
+    .wrapper{font-size: 15px;}
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "item1"
+        "item2"
+        "item3";
+        width: 7ovw;
+        margin: 0 auto;
+        padding: 20px;  
+    }
+    .item3{
+        border-radius: 0 5px;
+    }
+    .attribution{
+        text-align: center;
+    }
+    
+    
+}
+
